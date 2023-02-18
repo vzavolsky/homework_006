@@ -8,6 +8,9 @@ public class Main {
         task_05();
         task_06();
         task_07();
+        task_08();
+        task_09();
+        task_10();
     }
     public static void task_01() {
         for (int i = 1; i <= 10; i++) {
@@ -54,6 +57,28 @@ public class Main {
             System.out.println(increment);
             increment = increment * 2;
             if (increment > 512) break;
+        }
+    }
+    public static void task_08() {
+        int myMoney = 0;
+        for (int i = 1; i <= 12; i++) {
+            myMoney += 29000;
+            System.out.printf("Месяц %d, сумма накоплений равна %d рублей",i,myMoney);
+            System.out.println();
+        }
+    }
+    public static void task_09() {
+        double myMoney = 0;
+        for (int i = 1; i <= 12; i++) {
+            myMoney = myMoney*1.1f + 29000;
+            System.out.printf("Месяц %d, сумма накоплений равна %.2f рублей",i,myMoney);
+            System.out.println();
+        }
+    }
+    public static void task_10() {
+        for (int i = 1; i <= 10; i++) {
+            System.out.printf("2*%d=%d", i, i * 2);
+            System.out.println();
         }
     }
 }
